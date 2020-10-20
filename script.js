@@ -2,7 +2,7 @@ window.onload = () => {
 
     const animate1 = document.getElementById("animate-1");
     const animate2 = document.getElementById("animate-2");
-    const intro = document.querySelectorAll(".intro");
+    const intro = document.querySelector(".intro");
 
 
     window.onscroll = () => {
@@ -15,17 +15,15 @@ window.onload = () => {
             }, 150);
 
 
-            var i;
-            for (i = 0; i < intro.length; i++) {
-                intro[i].style.backgroundColor = "#14181a";
-            }
+           
+                intro.style.backgroundColor = "#14181a";
+        
 
         } else {
-            var i;
-            for (i = 0; i < intro.length; i++) {
-                intro[i].style.backgroundColor = "white";
-                intro[i].style.paddingTop = "100px";
-            }
+           
+                intro.style.backgroundColor = "white";
+                intro.style.paddingTop = "100px";
+        
         }
 
         if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
