@@ -21,7 +21,7 @@ window.onload = () => {
 
         } else {
            
-                intro.style.backgroundColor = "white";
+            
                 intro.style.paddingTop = "100px";
         
         }
